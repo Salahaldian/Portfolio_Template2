@@ -2,122 +2,189 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
-        <style type="text/css">
-            * {
-                box-sizing: border-box;
-            }
-            body{
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-            .nav{
-                background-color: #944f01;
-                height: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .clear {
-                clear: both;
-            }
-            .panel{
-                width: 1530px;
-            }
-            ul{
-                list-style: none;
-            }
-            .link li{
-                display: inline-block;
-                float: left;
-                margin: 0 40px 0 0;
-            }
-            .link .li-footer{
-                display: inline-block;
-                float: right;
-                margin: 0 40px 0 0;
-            }
-            .link li a{
-                text-decoration: none;
-                color: #fff;
-                font-size: 23px;
-            }
-            ul li a:hover{
-                text-decoration: none;
-                background-color: black;
-                color: #fff;
-                font-size: 23px;
-            }
-            .super-sec{
-                background: url(images/web1111.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                min-height: 100vh;
-                width: auto;
-                position: relative;
-            }
-            .item-super{
-                margin: 0;
-                position: relative;
-                top: 250px;
-                left: -60px;
-                text-align: center;
-            }
-            .item-super h1{
-                margin: 0;
-                color: #fff;
-                text-shadow: 0 0 10px rgb(25, 145, 9);
-            }
-            .item-super p{
-                font-size: 20px;
-                color: #fff;
-                text-shadow: 0 0 10px rgb(25, 145, 9);
-            }
-            .box img{
+        <title>this is fisrt quiz</title>
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        /*css for header*/
+        .nav{
+            background-color: #222;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clear {
+            clear: both;
+        }
+        .panel{
+            width: 1530px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+            float: left;
+            margin: 0 40px 0 0;
+        }
+        .li-footer{
+            display: inline-block;
+            float: right;
+            margin: 0 40px 0 0;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 23px;
+        }
+        .super-sec{
+            background: url(images/bg-header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            width: auto;
+            position: relative;
+        }
+        .item-super{
+            margin: 0;
+            position: relative;
+            top: 250px;
+            left: -60px;
+            text-align: center;
+        }
+        .item-super h1{
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 0 10px rgb(25, 145, 9);
+        }
+        .item-super p{
+            font-size: 20px;
+            color: #fff;
+            text-shadow: 0 0 10px rgb(25, 145, 9);
+        }
+        .item-super button{
+            background-color: rgb(25, 145, 9);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px 0 ;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        /*css for main*/
+        .div1{
+            margin: 10px 50px;
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: left;
+        }
+        .box{
+            background-color: rgb(187, 180, 180);
+            display: inline-block;
+            padding-bottom: 20px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.322);
+            margin-bottom: 20px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .box img {
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        .super-div-about {
+            background-color: #eee;
+            width: 100%;
+        }
+        .box-2ml-51 {
+            margin-left: 150px;
+            margin-top: 100px;
+            position: relative;
+        }
+        .box-2ml-51::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            right: 870px;
+            top:0px;
+            margin-top: 10px;
+            border-width: 100px;
+            border-style: solid;
+            border-color:transparent transparent transparent green ;
+        }
+        .h3-about {
+            color: green;
+        }
+        .box img{
             width: 350px;
-            }
-            .box p,span{
-                padding-left: 20px;
-            }
-            .item-servis{
-                background: url(images/iphone-hand.png) no-repeat;
-                /*min-height: 80vh;*/
-                height: 400px;
-                background-position: right;
-            }
-            .box-item{
-                position: relative;
-                top: 100px;
-                left: 50px;
-            }
-            .box-item h2 {
-                color: green;
-            }
-            .h1-servis{
-                margin-left: 50px;
-                color: green; 
-                font-size: 40px;
-            }
-            .servis li{
-                margin: 30px;
-                transform: none; 
-                list-style: none;
-                display: block;
-                list-style-image: url("images/dots.gif");
-            }
-            .container1{
-                display: block;
-            }
-            .container2{
-                margin: auto;
-            }
-            .phone{
-                float: right;
-                display: flex; 
-                margin: auto;
-                margin-top: -400px;
-            }
+        }
+        .box p,span{
+            padding-left: 20px;
+        }
+        
+        .item-servis{
+            background: url(images/iphone-hand.png) no-repeat;
+            /*min-height: 80vh;*/
+            height: 400px;
+            background-position: right;
+        }
+        .box-item{
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        
+        .box-item h2 {
+            color: green;
+        }
+        .image {
+            background-color: #eee;
+            float: center;
+            width: auto;
+            height: 370px;
+            padding-bottom: 50px;
+        }
+        .h2-com {
+            color: green;
+        }
+        .our-com {
+            text-align: center;
+            float: left;
+            margin-top: 100px;
+            padding-left: 50px;
+            width: 400px;
+        }
+        .h1-image h1 {
+            color: green;
+            text-align: center;
+            padding-top: 10px;
+            margin-right: 400px;
+        }
+        .p1 {
+            text-align: center;
+        }
+        .img{
+            float: left;
+            /*padding: 30px;*/
+            margin-left: 100px;
+        }
+        .img:hover {
+            border: 1px solid red;
+            opacity: 0.5;
+        }
+        /*css for footer*/
+        .Copyright{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
         </style>
     </head>
     <body>
@@ -125,16 +192,9 @@
             <div class="super-sec">
                 <div class="panel">
                     <div class="item-super">
-                        <h1>Name</h1>
-                        <p>id</p>
-                        <div class="icon">
-                            <img src="images/YouTube.png" alt="YouTube">
-                            <img src="images/twitter.png" alt="twitter">
-                            <img src="images/Google_.png" alt="Google">
-                            <img src="images/Facebook.png" alt="Facebook">
-                            <img src="images/LinkedIn.png" alt="LinkedIn">
-                            <img src="images/Pinterest.png" alt="Pinterest">
-                        </div>
+                        <h1>Salahaldian Hamid</h1>
+                        <p>120200253</p>
+                        <button>Get Started</button>
                     </div>
                 </div>
             </div>
@@ -142,7 +202,7 @@
                 <div class="panel">
                     <div class="logo">
                     </div>
-                    <ul class="link">
+                    <ul>
                         <li> <a href="#Home">Home</a></li>
                         <li> <a href="#about">About Us</a></li>
                         <li> <a href="#servis">Servise</a></li>
@@ -153,33 +213,60 @@
             </div>
             <div class="clear"></div>
         </header>
-        <section id="servis" class="servis">
-            <div class="container1">
-                <div class="container2">
-                    <h1 class="h1-servis"> Serves </h1>
-                    <ul class="servis">
-                        <li>
-                            <img src="images/dots.gif" width="50px" height="50px">
-                            WebSite design and programing            
-                        </li>
-                        <li>
-                            <img src="images/dots.gif" width="50px" height="50px">
-                            Smart Phone programing
-                        </li>
-                        <li>
-                            <img src="images/dots.gif" width="50px" height="50px">
-                            Serves booking 
-                        </li>
-                        <li>
-                            <img src="images/dots.gif" width="50px" height="50px">
-                            Ui Ux 
-                        </li>
-                    </ul> 
+        <main>
+            <section id="about" class="about">
+                <div class="panel">
+                    <div class="super-div-about">
+                        <div class="div1">
+                            <div class="box">
+                                <img src="images/person.png" alt="">
+                                <p>Lorem, ipsum.</p>
+                                <span>Lorem, ipsum dolor.</span>
+                            </div>
+                            <div class="box-2ml-51" >
+                                <h3 class="h3-about">About</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam commodi ducimus cumque facere tempora ex quae unde aliquam laborum at neque autem possimus omnis alias totam. Eos, animi optio.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam commodi ducimus cumque facere tempora ex quae unde aliquam laborum at neque autem possimus omnis alias totam. Eos, animi optio.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="phone">
-                    <img src="images/iphone-hand.png" >
+            </section>
+            <section id="servis" class="servis">
+                <div class="item-servis">
+                    <div class="box-item">
+                        <h2>Service</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni dolores, culpa distinctio sunt mollitia ut doloribus quis nisi. <br> Sint excepturi delectus laudantium <br> sunt totam. Temporibus reiciendis sunt impedit <br> culpa!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni dolores, culpa <br> distinctio sunt mollitia ut doloribus quis nisi. <br> Sint excepturi delectus laudantium <br> sunt totam. Temporibus reiciendis sunt impedit culpa!Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Ipsam magni dolores, culpa distinctio sunt mollitia ut doloribus quis nisi. <br> Sint excepturi delectus laudantium <br> sunt totam. Temporibus reiciendis sunt impedit culpa!</p>
+                    </div>
+                </div>
+            </section>
+            <div id="Images" class="image">
+                <div class="our-com">
+                    <img src="images/phototime-logo-green.png" alt="">
+                    <h2 class="h2-com">Our Company</h2>
+                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod</p>
+                </div>
+                <div class="h1-image">
+                    <h1>Image</h1>
+                </div>
+                <div class="photo">
+                    <div class="img">
+                        <img src="images/gallery-2.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="images/gallery-1.jpg" alt="">
+                    </div>
                 </div>
             </div>
-        </section>
+        </main>
+        <footer id="footer" class="Copyright">
+            <p>Copyright &#xa9; 2021 Eng:Salahaldian Ahmad Hamid</p>
+            <img src="images/YouTube.png" alt="YouTube">
+            <img src="images/twitter.png" alt="twitter">
+            <img src="images/Google_.png" alt="Google">
+            <img src="images/Facebook.png" alt="Facebook">
+            <img src="images/LinkedIn.png" alt="LinkedIn">
+            <img src="images/Pinterest.png" alt="Pinterest">
+        </footer>
     </body>
 </html>
